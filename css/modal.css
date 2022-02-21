@@ -11,6 +11,10 @@
   z-index: 10000;
 }
 
+.modal-pop.disabled{
+  display: none;
+}
+
 
 .modal__content--image{
 display: block;
