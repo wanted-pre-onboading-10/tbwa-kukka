@@ -1,0 +1,9 @@
+.navbar {
+  padding: 2rem 8rem 0;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-link:hover {
+  border-bottom: 2px #ffcd32 solid;
+}
