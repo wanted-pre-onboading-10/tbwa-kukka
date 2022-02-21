@@ -7,3 +7,25 @@
 .nav-link:hover {
   border-bottom: 2px #ffcd32 solid;
 }
+
+.navbar-btn-people {
+  background-position: -38px -817px;
+  background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+}
+
+.navbar-btn-cart {
+  background-position: -73px -817px;
+  background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+}
+
+.navbar-btn {
+  width: 25px;
+  height: 28px;
+  border: none;
+  margin: 0 0.5rem;
+  background-color: transparent;
+}
+
+.navbar-navbtn {
+  padding: 5px 0 0 7px;
+}
