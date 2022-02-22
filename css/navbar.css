@@ -1,13 +1,10 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 .navbar__navbar-wrapper {
-  height: 57px;
-  box-sizing: border-box;
   display: flex;
 }
 
 .navbar {
-  top: 0px;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -20,9 +17,6 @@
 
 .nav-item {
   margin-left: 45px;
-  display: flex;
-  align-items: center;
-  vertical-align: top;
 }
 
 .nav-link {
@@ -32,15 +26,14 @@
   font-weight: 300;
   color: #222;
   font-size: 18px;
-  line-height: 27px;
 }
 
 .nav-link:hover {
-  display: inline-block;
-  display: flex;
-  align-items: center;
   font-weight: 300;
   border-bottom: 4px #ffcd32 solid;
+}
+.nav-link:active {
+  color: #ffcd32;
 }
 
 .navbar-brand {
@@ -48,8 +41,6 @@
   width: 128px;
   height: 57px;
   margin-top: 20px;
-  top: 100%;
-  left: 60px;
 }
 
 .navbar-image {
@@ -66,7 +57,6 @@
 
 .navbar-nav {
   padding: 33px 130px 0px 130px;
-  text-align: center;
 }
 
 .header__navbar-btn {
@@ -74,9 +64,9 @@
   height: 28px;
   border: none;
   margin: 0 8px;
-  padding: 5px 0 0 7px;
   background-color: transparent;
 }
+
 @media (min-width: 1024px) {
   .nav {
     display: none;
@@ -93,6 +83,7 @@
 
   .navbar-brand {
     width: 167px;
+    margin-top: 0;
     height: 22px;
     background-size: 626px 422.5px;
     background-position: -383px -219px;
@@ -104,20 +95,38 @@
     background-position: -604px -306px;
   }
   .navbar {
+    display: flex;
+    justify-content: space-between;
     padding: 16px 8px 8px;
+    border-bottom: #ececec 2px solid;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: #ececec 2px solid;
+  }
+
+  .nav-item {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-link {
+    height: 100%;
+    color: #787878;
+    border-bottom: 4px transparent solid;
+  }
+  .nav-link:hover {
+    font-weight: 300;
+    color: black;
+    border-bottom: 4px #ffcd32 solid;
   }
 }
 
 /* 수정 예정 */
-.nav {
-  padding-top: 64px;
-  border-top: #ececec 1px solid;
-  border-bottom: #ececec 1px solid;
-}
-
-a {
-  color: #787878;
-}
 
 .test-div {
   width: 100%;
