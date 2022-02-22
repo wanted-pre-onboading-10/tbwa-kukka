@@ -1,9 +1,10 @@
 .iframe__youtube{
-  margin: 50px auto 0;
+  margin: 77px auto 0 ;
   max-width: 1240px;
+  height: 300px;
   width: 100%;
   display: block;
-
+  padding: 0 60px;
 }
 
 .banner__container{
@@ -174,4 +175,9 @@
   .banner-carousel__container{
     display: block;
     }
+
+  .iframe__youtube{
+    margin-top: 92px;
+    padding: 0 20px;
+  }
 }
