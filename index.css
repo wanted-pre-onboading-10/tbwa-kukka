@@ -1,7 +1,12 @@
 .navbar {
-  padding: 2rem 8rem 0;
+  top: 0px;
+  padding: 2rem 8rem 1rem;
   position: fixed;
   width: 100%;
+}
+
+.navbar.active {
+  box-shadow: 0 0 4px #ffcd32;
 }
 
 .nav-link {
@@ -68,7 +73,7 @@
     background-position: -604px -306px;
   }
   .navbar {
-    padding: 2rem 1rem 0;
+    padding: 2rem 1rem 1rem;
   }
 }
 
