@@ -1,16 +1,7 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .footer {
   padding: 80px 60px;
 
-  font-family: 'Noto Sans KR', sans-serif;
-
-  background-color: #1a1a1a;
+  background-color: #222;
   color: white;
 }
 
