@@ -20,6 +20,10 @@ a {
   color: inherit;
 }
 
+p{
+  margin:0;
+}
+
 button {
   background: transparent;
   border: none;
