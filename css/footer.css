@@ -204,6 +204,7 @@
 
 .footer__about--tems {
   margin: 0;
+
   float: right;
   clear: none;
 }
@@ -230,7 +231,7 @@
   width: 150px;
   height: 63px;
 
-  background-image: url('	https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+  background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
   background-position: 0 -612px;
   background-size: 1252px 845px;
 }
@@ -242,6 +243,7 @@
 
   .footer__social {
     height: 24px;
+
     padding: 10px 0;
   }
 
