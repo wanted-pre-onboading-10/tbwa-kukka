@@ -1,42 +1,125 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.navbar__navbar-wrapper {
+  height: 57px;
+  box-sizing: border-box;
+  display: flex;
+}
+
 .navbar {
-  padding: 2rem 8rem 0;
+  top: 0px;
   position: fixed;
+  background-color: white;
   width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.navbar.active {
+  box-shadow: 0 0 4px #ffcd32;
+}
+
+.nav-item {
+  margin-left: 45px;
+  display: flex;
+  align-items: center;
+  vertical-align: top;
 }
 
 .nav-link {
   border-bottom: 4px transparent solid;
 }
+.nav-link span {
+  font-weight: 300;
+  color: #222;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 .nav-link:hover {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
   border-bottom: 4px #ffcd32 solid;
 }
 
 .navbar-brand {
   background-position: -160px -612px;
   width: 128px;
-  height: 52px;
+  height: 57px;
+  margin-top: 20px;
+  top: 100%;
+  left: 60px;
 }
 
 .navbar-image {
   background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
 }
 
-.navbar-btn-people {
+.header__navbar-btn-people {
   background-position: -38px -817px;
 }
 
-.navbar-btn-cart {
+.header__navbar-btn-cart {
   background-position: -73px -817px;
 }
 
-.navbar-btn {
+.navbar-nav {
+  padding: 33px 130px 0px 130px;
+  text-align: center;
+}
+
+.header__navbar-btn {
   width: 25px;
   height: 28px;
   border: none;
-  margin: 0 0.5rem;
+  margin: 0 8px;
+  padding: 5px 0 0 7px;
   background-color: transparent;
 }
+@media (min-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .navbar-nav {
+    display: none;
+  }
 
-.navbar-navbtn {
-  padding: 5px 0 0 7px;
+  .header__navbar-btn-people {
+    display: none;
+  }
+
+  .navbar-brand {
+    width: 167px;
+    height: 22px;
+    background-size: 626px 422.5px;
+    background-position: -383px -219px;
+  }
+  .header__navbar-btn-cart {
+    background-size: 626px 422.5px;
+    width: 21px;
+    height: 23.5px;
+    background-position: -604px -306px;
+  }
+  .navbar {
+    padding: 16px 8px 8px;
+  }
+}
+
+/* 수정 예정 */
+.nav {
+  padding-top: 64px;
+  border-top: #ececec 1px solid;
+  border-bottom: #ececec 1px solid;
+}
+
+a {
+  color: #787878;
+}
+
+.test-div {
+  width: 100%;
+  height: 800px;
 }
