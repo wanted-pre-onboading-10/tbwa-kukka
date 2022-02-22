@@ -52,27 +52,6 @@
 
 <br/>
 
-## 📌 로컬 환경 구동
-
-프로젝트 클론
-
-```
-  git clone <https://github.com/wanted-pre-onboading-10/tdwa-kukka.git>
-```
-
-프로젝트 디렉토리 들어가기
-
-```
-  cd tawa-kukka
-```
-
-패키지 설치 및 프로젝트 시작
-
-```
-  npm install && npm run dev 
-```
-
-<br/>
 
 ## 📌 팀원
 
