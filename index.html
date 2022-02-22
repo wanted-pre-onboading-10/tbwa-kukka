@@ -4,37 +4,250 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <!--[if IE 9]>
       <link
         href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css"
-        rel="stylesheet"
-      />
+        rel="stylesheet" />
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
     <!--[if lte IE 8]>
       <link
         href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css"
-        rel="stylesheet"
-      />
+        rel="stylesheet" />
       <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
     <![endif]-->
-    <title>TBWA - Kukka</title>
+    <!--[if lt IE 7]>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+    <![endif]-->
+    <script src="../js/lib/modernizr-2.8.3.min.js"></script>
+    <script src="../js/lib/respond.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
+    <title>꾸까 | 언제나 꽃과 함께, NO.1 플라워브랜드</title>
   </head>
   <body>
+    <nav class="navbar__navbar-wrapper">
+      <div class="navbar__navbar-border">
+        <div class="navbar navbar-expand navbar-light">
+          <a class="navbar-brand navbar-image" href="#"></a>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#iframe__youtube"
+                ><span>동영상</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#custom-carousel"
+                ><span>플라워 클래스</span></a
+              >
+            </li>
+          </ul>
+          <button
+            class="navbar-image header__navbar-btn header__navbar-btn-people"></button>
+          <button
+            class="navbar-image header__navbar-btn header__navbar-btn-cart"></button>
+        </div>
+      </div>
+
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#iframe__youtube">동영상</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#custom-carousel">플라워 클래스</a>
+        </li>
+      </ul>
+    </nav>
+
+    <iframe
+      class="iframe__youtube"
+      id="iframe__youtube"
+      src="https://www.youtube.com/embed/FiZI8xd3qoY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <div class="custom-carousel" id="custom-carousel">
+      <h2 class="carousel--title font-weight-normal">
+        꽃과 함께 하는 일상,
+        <span class="font-weight-bolder">플라워클래스</span>
+      </h2>
+      <div class="carousel-container position-relative">
+        <button type="button" class="carousel--button left"></button>
+        <button type="button" class="carousel--button right"></button>
+      </div>
+    </div>
+    <div class="banner__container">
+      <div class="banner__item--left">
+        <div class="banner__image--left">
+          <h2 class="banner__item--title">꾸까 브랜드 이야기</h2>
+          <p class="banner__item--description">
+            꽃으로 라이프 스타일을 만들어가는
+          </p>
+          <p class="banner__item--description">kukka의 문화를 소개해요.</p>
+          <p class="banner__item--button">Brand story</p>
+        </div>
+      </div>
+      <div class="banner__item--right">
+        <div class="banner__image--right">
+          <h2 class="banner__item--title">꾸까 오프라인 쇼룸</h2>
+          <p class="banner__item--description">
+            꽃을 가까이서 만져보고 향기도 맡아보고,
+          </p>
+          <p class="banner__item--description">
+            꽃 속에서 작은 휴식을 누릴 수 있는 kukka의 오프라인 쇼룸
+          </p>
+          <p class="banner__item--button">꾸까 오프라인 쇼룸</p>
+        </div>
+      </div>
+    </div>
+    <div class="banner-carousel__container">
+      <div class="banner-carousel__header">
+        <h2>꾸까 브랜드 스토리</h2>
+        <a href="#">더보기</a>
+      </div>
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselIndicators"
+            data-slide-to="0"
+            class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active banner-carousel__content--left">
+            <div class="banner__item--wrapper">
+              <h3 class="banner__item--title">꾸까 브랜드 이야기</h3>
+              <p class="banner__item--description">
+                꽃으로 라이프 스타일을 만들어가는
+              </p>
+              <p class="banner__item--description">kukka의 문화를 소개해요.</p>
+            </div>
+            <img
+              class="d-block w-100"
+              src="../images/banner-mobile-1.png"
+              alt="First slide" />
+          </div>
+          <div class="carousel-item banner-carousel__content--right">
+            <div class="banner__item--wrapper">
+              <h3 class="banner__item--title">꾸까 오프라인 쇼룸</h3>
+              <p class="banner__item--description">
+                꽃을 가까이서 만져보고 향기도 맡아보고,
+              </p>
+              <p class="banner__item--description">
+                꽃 속에서 작은 휴식을 누릴 수 있는 kukka의 오프라인 쇼룸
+              </p>
+            </div>
+            <img
+              class="d-block w-100"
+              src="../images//banner-mobile-2.png"
+              alt="Second slide" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_wrap">
+        <div class="footer__social">
+          <a
+            class="footer__social--icon footer__social--icon-f"
+            href="https://www.facebook.com/kukka.kr/"
+            target="_blank"></a>
+          <a
+            class="footer__social--icon footer__social--icon-i"
+            href="https://www.instagram.com/kukkakorea/"
+            target="_blank"></a>
+          <a
+            class="footer__social--icon footer__social--icon-y"
+            href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber"
+            target="_blank"></a>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-left">
+            <div class="footer__contact--title">꾸까 고객센터</div>
+            <div class="footer__contact--number">1661-1031</div>
+            <div class="footer__contact--description">
+              (평일 10:00 - 13:00, 14:00 - 18:00 / 주말 & 공휴일 제외)
+            </div>
+            <div class="footer__contact--enterprise">
+              기업제휴 문의 : 070-4238-8251
+            </div>
+          </div>
+          <div class="footer__contact-left">
+            <div class="footer__contact--btn">꾸까 고객센터 ></div>
+          </div>
+        </div>
+        <div class="footer__about">
+          <div class="footer__about--logo"></div>
+          <div class="footer__about--info info-start">상호명: 꾸까(kukka)</div>
+          <div class="footer__about--info">사업자 등록번호:264-81-32594</div>
+          <div class="footer__about--info info-end">대표자:박춘화</div>
+          <div class="footer__about--info info-start">
+            소재지: 서울시 서초구 남부순환로333길 10 kukka
+          </div>
+          <div class="footer__about--info">기업공시</div>
+          <div class="footer__about--info info-end">
+            통신판매신고번호 2018-서울서초-1692
+          </div>
+          <div class="footer__about--info info-start copy-end">
+            <copy>© 2014-2021 kukka, Inc. All rights reserved.</copy>
+          </div>
+          <div class="footer__about--tems">
+            <div>이용약관</div>
+            <div>개인정보 처리방침</div>
+            <div>제휴안내</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-pop">
+      <div>
+        <a href="https://www.cjlogistics.com/ko/tool/parcel/tracking" target="_blank">
+        <img
+          class="modal__content--image"
+          src="../images/modal-shipping-information.png"
+          alt="shipping delay notice" />
+        </a>
+        <div class="modal__content--button-box">
+          <button class="modal__button-box--cookie">
+            <img src="../images/checkbox-icon.svg" alt="checkbox" />
+            <p>오늘 하루 보지 않기</p>
+          </button>
+          <button class="modal__button-box--close">
+            <p>닫기</p>
+            <img src="../images/x-mark-icon.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+    <script src="../js/lib/jquery-cookie.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+    <script src="./index.js" defer type="module"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/banner.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>

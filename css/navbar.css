@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.navbar__navbar-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 0 4px 4px -4px #ffcd32;
+}
+
+.navbar {
+  padding: 0 20px;
+  z-index: 9999;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.nav-item {
+  margin-left: 45px;
+}
+
+.nav-link {
+  border-bottom: 4px transparent solid;
+}
+.nav-link span {
+  font-weight: 300;
+  color: #222;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  font-weight: 300;
+  border-bottom: 4px #ffcd32 solid;
+}
+.nav-link:active {
+  color: #ffcd32;
+}
+
+.navbar-brand {
+  background-position: -160px -612px;
+  width: 128px;
+  height: 57px;
+  margin-top: 20px;
+}
+
+.navbar-image {
+  background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+}
+
+.header__navbar-btn-people {
+  background-position: -38px -817px;
+}
+
+.header__navbar-btn-cart {
+  background-position: -73px -817px;
+}
+
+.navbar-nav {
+  max-width: 1024px;
+  padding: 33px 130px 0px 130px;
+}
+
+.header__navbar-btn {
+  width: 25px;
+  height: 28px;
+  border: none;
+  margin: 0 8px;
+  background-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .header__navbar-btn-people {
+    display: none;
+  }
+
+  .navbar-brand {
+    width: 167px;
+    margin-top: 0;
+    height: 22px;
+    background-size: 626px 422.5px;
+    background-position: -383px -219px;
+  }
+  .header__navbar-btn-cart {
+    background-size: 626px 422.5px;
+    width: 21px;
+    height: 23.5px;
+    background-position: -604px -306px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px 8px;
+    border-bottom: #ececec 2px solid;
+  }
+
+  .nav {
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    border-bottom: #ececec 2px solid;
+  }
+
+  .nav-item {
+    margin-left: 0px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+  .nav-link {
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #787878;
+    border-bottom: 4px transparent solid;
+  }
+  .nav-link:hover {
+    font-weight: 300;
+    color: black;
+    height: 100%;
+    font-size: 16px;
+    border-bottom: 4px #ffcd32 solid;
+  }
+}
+
+.test-div {
+  width: 100%;
+  height: 800px;
+}
