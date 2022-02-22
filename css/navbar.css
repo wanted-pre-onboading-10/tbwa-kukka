@@ -1,19 +1,21 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 .navbar__navbar-wrapper {
-  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 0 4px 4px -4px #ffcd32;
 }
 
 .navbar {
-  background-color: white;
-  z-index: 1000;
+  padding: 0 20px;
+  z-index: 9999;
   width: 100%;
-  position: fixed;
+  margin: 0 auto;
+  max-width: 1024px;
   font-family: 'Noto Sans KR', sans-serif;
-}
-
-.navbar.active {
-  box-shadow: 0 0 4px #ffcd32;
 }
 
 .nav-item {
@@ -57,6 +59,7 @@
 }
 
 .navbar-nav {
+  max-width: 1024px;
   padding: 33px 130px 0px 130px;
 }
 
@@ -98,7 +101,7 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 16px 8px 8px;
+    padding: 16px 20px 8px;
     border-bottom: #ececec 2px solid;
   }
 
@@ -108,7 +111,6 @@
     display: flex;
     height: 44px;
     justify-content: center;
-    margin-top: 50px;
     border-bottom: #ececec 2px solid;
   }
 

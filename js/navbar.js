@@ -1,8 +1,8 @@
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
   if (scroll > 0) {
-    $('.navbar').addClass('active');
+    $('.navbar__navbar-wrapper').addClass('active');
   } else {
-    $('.navbar').removeClass('active');
+    $('.navbar__navbar-wrapper').removeClass('active');
   }
 });
