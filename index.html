@@ -28,10 +28,39 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <title>꾸까 | 언제나 꽃과 함께, NO.1 플라워브랜드</title>
   </head>
   <body>
-    <div class="custom-carousel">
+    <nav class="navbar__navbar-wrapper">
+      <div class="navbar navbar-expand navbar-light">
+        <a class="navbar-brand navbar-image" href="#"></a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#test1"><span>동영상</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#custom-carousel"
+              ><span>플라워 클래스</span></a
+            >
+          </li>
+        </ul>
+        <button
+          class="navbar-image header__navbar-btn header__navbar-btn-people"></button>
+        <button
+          class="navbar-image header__navbar-btn header__navbar-btn-cart"></button>
+      </div>
+
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#">동영상</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#custom-carousel">플라워 클래스</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="custom-carousel" id="custom-carousel">
       <h2 class="carousel--title font-weight-normal">
         꽃과 함께 하는 일상,
         <span class="font-weight-bolder">플라워클래스</span>

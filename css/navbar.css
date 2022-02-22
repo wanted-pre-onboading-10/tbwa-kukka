@@ -5,9 +5,10 @@
 }
 
 .navbar {
-  position: fixed;
   background-color: white;
+  z-index: 1000;
   width: 100%;
+  position: fixed;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -102,6 +103,7 @@
   }
 
   .nav {
+    z-index: 1000;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -115,6 +117,7 @@
     justify-content: center;
   }
   .nav-link {
+    font-size: 16px;
     height: 100%;
     color: #787878;
     border-bottom: 4px transparent solid;
@@ -122,11 +125,10 @@
   .nav-link:hover {
     font-weight: 300;
     color: black;
+    font-size: 16px;
     border-bottom: 4px #ffcd32 solid;
   }
 }
-
-/* 수정 예정 */
 
 .test-div {
   width: 100%;
