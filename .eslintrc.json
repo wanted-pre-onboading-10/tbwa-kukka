@@ -7,5 +7,8 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "rules": {}
+  "rules": {},
+  "import/extensions": {
+    "js": "always"
+  }
 }
