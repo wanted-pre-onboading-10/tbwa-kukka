@@ -100,3 +100,78 @@
 .banner__image--right:hover{
   transform: scale(1.05);
 }
+
+.banner-carousel__container{
+  display: none;
+  background-color: #f7f7f7;
+  color:#222;
+  padding: 40px 20px 0;
+}
+
+.banner-carousel__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-carousel__header > h2{
+  font-size: 22px;
+}
+
+.banner-carousel__header > a{
+  font-size: 12px;
+}
+
+.carousel-indicators{
+  bottom:15px;
+}
+
+.carousel-indicators li {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+}
+
+.carousel-indicators .active {
+  background-color: #f5ca5f;;
+}
+
+.carousel-inner{
+  padding-bottom:50px;
+  margin-top:20px;
+  
+}
+
+.carousel-item{
+  position: relative;
+}
+
+.banner__item--wrapper{
+  position: absolute;
+  top:25%;
+  left:5%;
+}
+
+.banner__item--wrapper > h3{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.banner__item--wrapper > p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+
+
+@media (max-width: 1024px){
+  
+  .banner__container{
+    display: none;
+  }
+  
+  .banner-carousel__container{
+    display: block;
+    }
+}
