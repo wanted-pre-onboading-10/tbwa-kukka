@@ -1,7 +1,6 @@
-import CarouselMain from './carousel-primary/index.js';
-import CarouselSecondary from './carousel-secondary/index.js';
-
-import { carouselItems } from '../../data/carousel-items.js';
+import CarouselMain from './carousel-primary.js';
+import CarouselSecondary from './carousel-secondary.js';
+import { carouselItems } from '../data/carousel-items.js';
 
 function Carousel({ target }) {
   const carousel = document.createElement('div');

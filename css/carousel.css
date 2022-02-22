@@ -139,22 +139,26 @@
 .carousel--button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   z-index: 999;
-  border-radius: 50%;
-  padding: 7px 14px;
   display: none;
-  background-color: white;
-  border: 1px solid #ccc;
-  color: #aaa;
+  background-color: transparent;
+  border: none;
+
+  background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
+  background-position: -1108px -492px;
+  width: 84px;
+  height: 84px;
+  background-size: 1252px 845px;
 }
 
 .carousel--button.right {
-  right: -50px;
+  right: -60px;
+  transform: translateY(-50%);
 }
 
 .carousel--button.left {
-  left: -50px;
+  left: -60px;
+  transform: translateY(-50%) rotate(180deg);
 }
 
 @media (min-width: 992px) {
