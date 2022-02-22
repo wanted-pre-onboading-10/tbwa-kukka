@@ -1,0 +1,378 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  padding: 80px 60px;
+
+  font-family: 'Noto Sans KR', sans-serif;
+
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.footer_wrap {
+  display: table;
+
+  width: 100%;
+  max-width: 1120px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: left;
+}
+
+.footer__social {
+  height: 32px;
+  clear: both;
+}
+
+.footer__social--icon {
+  width: 32px;
+  height: 32px;
+
+  background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+  background-size: 1252px 845px;
+
+  border: none;
+
+  margin: 0 20px 0 0;
+
+  cursor: pointer;
+  float: left;
+}
+
+.footer__social--icon-f {
+  background-position: -42px -775px;
+}
+
+.footer__social--icon-i {
+  background-position: -1214px -438px;
+}
+
+.footer__social--icon-y {
+  background-position: -1164px -685px;
+}
+
+.footer__contact {
+  margin: 14px 0 0 0;
+  clear: both;
+}
+
+.footer__contact-left {
+  float: left;
+}
+
+.footer__contact--title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.33px;
+  color: #f7f7f7;
+
+  float: left;
+}
+
+.footer__contact--number {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.33px;
+  color: #f7f7f7;
+
+  margin: 0 0 0 20px;
+
+  float: left;
+}
+
+.footer__contact--description {
+  font-size: 14px;
+  color: #9b9b9b;
+  line-height: 2.36;
+  letter-spacing: -0.21px;
+
+  margin: 0 0 0 10px;
+
+  float: left;
+}
+
+.footer__contact--enterprise {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.4;
+  color: #ffffff;
+
+  padding: 5px 0 0 0;
+
+  clear: both;
+}
+
+.footer__contact--btn {
+  border: 1px solid #9b9b9b;
+  border-radius: 18px;
+
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 2.77;
+  letter-spacing: -0.2px;
+
+  padding: 0 20px;
+  margin: 0 0 0 17px;
+
+  cursor: pointer;
+  float: left;
+
+  behavior: url(../js/PIE.htc);
+}
+
+.footer__about {
+  position: relative;
+
+  padding: 40px 0 0 0;
+
+  clear: both;
+}
+
+.footer__about::before {
+  content: '';
+  display: block;
+  position: absolute;
+
+  top: 20px;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: #444;
+}
+
+.footer__about--line {
+  clear: both;
+}
+
+.footer__about--info {
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.78;
+  letter-spacing: -0.21px;
+  color: #d3d3d3;
+
+  margin: 0 18px 0 0;
+
+  float: left;
+}
+
+.footer__about--info::after {
+  content: '';
+  display: block;
+  position: absolute;
+
+  top: 6px;
+  right: -10px;
+
+  width: 1px;
+  height: 13px;
+
+  background-color: #d3d3d3;
+}
+
+.footer__about > .info-start {
+  clear: both;
+}
+
+.footer__about > .info-end::after {
+  display: none;
+}
+
+.footer__about > .copy-end::after {
+  display: none;
+}
+
+.footer__about--info > copy {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.78;
+  letter-spacing: -0.21px;
+}
+
+.footer__about--tems {
+  margin: 0;
+
+  float: right;
+  clear: none;
+}
+
+.footer__about--tems > div {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.7;
+  letter-spacing: -0.21px;
+
+  margin: 0 0 0 25px;
+
+  float: left;
+  cursor: pointer;
+}
+
+.footer__about--logo {
+  display: block;
+  position: absolute;
+
+  top: -60px;
+  right: 0;
+
+  width: 150px;
+  height: 63px;
+
+  background-image: url('https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png');
+  background-position: 0 -612px;
+  background-size: 1252px 845px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 50px 20px;
+  }
+
+  .footer__social {
+    height: 24px;
+
+    padding: 10px 0;
+  }
+
+  .footer__social--icon {
+    width: 24px;
+    height: 24px;
+
+    background-size: 626px 422.5px;
+
+    margin: 0 20px 0 0;
+  }
+
+  .footer__social--icon-f {
+    background-position: -575px -306px;
+  }
+
+  .footer__social--icon-i {
+    background-position: -256px -306px;
+  }
+
+  .footer__social--icon-y {
+    width: 33px;
+    height: 24px;
+
+    background-position: -218px -306px;
+  }
+
+  .footer__contact-left {
+    clear: both;
+  }
+
+  .footer__contact--title {
+    font-size: 18px;
+    letter-spacing: -0.27px;
+  }
+
+  .footer__contact--number {
+    font-size: 18px;
+    letter-spacing: -0.27px;
+
+    margin: 0 0 0 10px;
+  }
+
+  .footer__contact--description {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.18px;
+
+    margin: 5px 0 0 0;
+
+    clear: both;
+  }
+
+  .footer__contact--enterprise {
+    padding: 5px 0;
+    margin: 5px 0 0 0;
+  }
+
+  .footer__contact--btn {
+    font-size: 12px;
+    line-height: 3;
+    letter-spacing: -0.18px;
+
+    padding: 0 20px;
+    margin: 15px 0;
+
+    cursor: pointer;
+
+    clear: both;
+  }
+
+  .footer__about {
+    padding: 15px 0 0 0;
+    margin: 15px 0 0 0;
+
+    border-top: 1px solid #787878;
+  }
+
+  .footer__about::before {
+    display: none;
+  }
+
+  .footer__about--info {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: -0.17px;
+
+    margin: 0 14px 0 0;
+  }
+
+  .footer__about--info::after {
+    top: 4px;
+    right: -9px;
+
+    height: 11px;
+  }
+
+  .footer__about > .info-start {
+    clear: none;
+  }
+
+  .footer__about > .info-end::after {
+    display: block;
+  }
+
+  .footer__about--info > copy {
+    font-size: 11px;
+    line-height: 1.7;
+    letter-spacing: -0.17px;
+  }
+
+  .footer__about--tems {
+    margin: 30px 0 0 0;
+
+    float: left;
+    clear: both;
+  }
+
+  .footer__about--tems > div {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: -0.18px;
+
+    margin: 0 30px 0 0;
+  }
+
+  .footer__about--logo {
+    display: none;
+  }
+}
