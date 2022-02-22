@@ -1,0 +1,192 @@
+.custom-carousel {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.carousel--title {
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+
+.carousel--section {
+  gap: 32px;
+}
+
+.carousel__primary--image {
+  width: 100%;
+  transition: transform 350ms ease;
+}
+
+.carousel__primary--link:hover .carousel__primary--image {
+  transform: scale(1.05);
+}
+
+.carousel__primary--text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  padding: 2rem;
+}
+
+.carousel__primary--title {
+  font-size: 16px;
+  color: #222;
+  font-weight: 700;
+}
+
+.carousel__primary--title::after {
+  content: '>';
+}
+
+.carousel__primary--subtitle {
+  font-size: 14px;
+  color: #222;
+  font-weight: 400;
+}
+
+.carousel--secondary:first-child {
+  padding-bottom: 5%;
+}
+
+.carousel--secondary:last-child {
+  padding-top: 5%;
+  border-top: 1px solid #ddd;
+}
+
+.carousel__secondary--link {
+  overflow: hidden;
+  max-width: 45%;
+}
+
+.carousel__secondary--image {
+  max-width: 100%;
+  transition: transform 350ms ease;
+}
+
+.carousel__secondary--link:hover .carousel__secondary--image {
+  transform: scale(1.05);
+}
+
+.carousel__secondary--text {
+  padding-left: 20px;
+  color: #222;
+  font-weight: 500;
+}
+
+.carousel__secondary--title {
+  display: block;
+  width: 100%;
+  color: #222;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .carousel__secondary--title {
+    font-size: 16px;
+  }
+}
+
+.carousel__secondary--price {
+  font-size: 14px;
+}
+
+.carousel__secondary--tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 5px;
+  user-select: none;
+}
+
+.carousel__secondary--tag {
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 300;
+  border: #222 1px solid;
+}
+
+.carousel__secondary--tag:hover {
+  text-decoration: underline;
+}
+.carousel__secondary--tag.jamsil {
+  border-color: #46cfa7;
+  color: #46cfa7;
+}
+.carousel__secondary--tag.wolgye {
+  border-color: #ffa04d;
+  color: #ffa04d;
+}
+.carousel__secondary--tag.guro {
+  border-color: #68a4fe;
+  color: #68a4fe;
+}
+.carousel__secondary--tag.songpa {
+  border-color: #ffcd32;
+  color: #ffcd32;
+}
+.carousel__secondary--tag.busan {
+  border-color: #00afe3;
+  color: #00afe3;
+}
+
+.carousel--button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  border-radius: 50%;
+  padding: 7px 14px;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #aaa;
+}
+
+.carousel--button.right {
+  right: -50px;
+}
+
+.carousel--button.left {
+  left: -50px;
+}
+
+@media (min-width: 992px) {
+  .carousel__primary--image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-carousel {
+    padding: 90px 60px;
+  }
+
+  .carousel--title {
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .carousel__primary--title {
+    font-size: 25px;
+  }
+
+  .carousel__primary--subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
